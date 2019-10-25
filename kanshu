@@ -1,0 +1,22 @@
+#!/system/bin/sh
+x=5000
+t=3
+[ "$*" != "" ] && t=$*
+echo $t
+#read  t
+
+#am start -n com.tencent.weread/com.tencent.weread.ReaderFragmentActivity
+sleep 5
+
+
+for i in $(seq 1 $x)
+    do 
+    echo $i
+    #input tap 2159 500
+    input tap 1079 500
+    #input keyevent 24
+    #input keyevent 25
+    #input keyevent 27
+    sleep $t
+done
+#https://blog.csdn.net/jlminghui/article/details/39268419

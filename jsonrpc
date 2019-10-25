@@ -1,0 +1,20 @@
+curl -d '{"jsonrpc":"2.0","method":"deviceInfo","id":1}' localhost:9008/jsonrpc/0 |jq
+
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "currentPackageName": "com.tencent.weread",
+    "displayHeight": 2016,
+    "displayRotation": 0,
+    "displaySizeDpX": 360,
+    "displaySizeDpY": 720,
+    "displayWidth": 1080,
+    "productName": "lineage_chiron",
+    "screenOn": true,
+    "sdkInt": 27,
+    "naturalOrientation": true
+  }
+}
+
+
